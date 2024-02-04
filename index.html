@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav><img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <marquee bevaviour="alternate" direction="right">
+                <h1>Hello world</h1>
+            </marquee> -->
+            <div class="header-text" data-aos="fade-in">
+                <p>Web Developer, Designer, <span>Youtuber</span></p>
+                <h1>Hi, I'm <span>Karthick P M</span><br> From Bangalore</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="zoom-in-down">
+                    <img src="images/abt-1.jpeg">
+                </div>
+                <div class="about-col-2" data-aos="zoom-in-up">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Karthick P M , <br>I am an enthusiastic, self-motivated, reliable, responsible and hard
+                        working person. I am a mature team worker and adaptable to all challenging situations. I am able
+                        to work well both in a team environment as well as using own initiative. I am able to work well
+                        under pressure and adhere to strict deadlines.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app Interfaces</li>
+                            <li><span>Web Development</span><br>HTML,CSS,Javascrpt<br>React js,Node
+                                js<br>Java,Python<br>Database</li>
+                            <li><span>Editor</span><br>Video Editor, Image Editing, Animation</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020-2023 Engineering</span><br>Sir M Visvesvaraya Institute of technology</li>
+                            <li><span>2017-2020 Diploma </span><br> SJ Polytechnic Bangalore</li>
+                            <li><span>2017 SSLC</span><br>Sri Morarji Desai Residential School</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>IOT-Automated Agriculture Management<br> system for Smart Irrigation</span></li>
+                            <li><span>Brain Stroke Prediction Using ML</span></li>
+                            <li><span>Covid-19 Testing Management System</span><br></li>
+                            <li><span>Real Estate Management System</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+
+
+    <div id="services" class="services">
+        <div class="container"data-aos="fade-down">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development, also known as website development, refers to the tasks associated with creating,
+                        building, and maintaining websites and web applications that run online on a browser. It may,
+                        however, also include web design, web programming, and database management.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>A user experience (UX) designer works on a team to create products that provide meaningful and
+                        enjoyable experiences for users.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Product Designer</h2>
+                    <p>Product design is the process designers use to blend user needs with business goals to help
+                        brands make consistently successful products.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-down">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                
+
+                <div class="work">
+                    <img src="images/dailybeat.png">
+                    <div class="layer">
+                        <h3>My Youtube Channel Website</h3>
+                        <a href="https://relaxed-duckanoo-9a1d6d.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image-search.png">
+                    <div class="layer">
+                        <h3>Image Search filter and Download</h3>
+                        <a href="https://radiant-duckanoo-df1e62.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/simple-eco.png">
+                    <div class="layer">
+                        <h3>Simple Ecommerce Website</h3>
+                        <a href="https://helpful-cendol-e0851f.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tshirt.png">
+                    <div class="layer">
+                        <h3>T-Shirt Designing and Website Development</h3>
+                        <a href="https://bespoke-caramel-1fc6b3.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/h-resort.png">
+                    <div class="layer">
+                        <h3>Honey Resort</h3>
+                        <a href="https://animated-malabi-342f2f.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/image.PNG">
+                    <div class="layer">
+                        <h3>Image slider</h3>
+                        <a href="https://visionary-crepe-e2bd72.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="work">
+                    <img src="images/random.PNG">
+                    <div class="layer">
+                        <h3>Random Number Generator</h3>
+                        <a href="https://youtu.be/bVGqEiSfdzQ?si=64Q1E6cknZ_2xMvn"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todo-list.PNG">
+                    <div class="layer">
+                        <h3>Todo-List</h3>
+                        <a href="https://youtu.be/hBVCQN3DES4?si=QcY0N_TlTC1-fAAI"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/texttping.PNG">
+                    <div class="layer">
+                        <h3>Multiple Text <br>Typing Animation</h3>
+                        <a href="https://youtu.be/PaEBAjHrED0?si=HYfEIDQLGpuAK3JX"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calculator.PNG">
+                    <div class="layer">
+                        <h3>Simple Calculator</h3>
+                        <a href="https://youtu.be/nR-OxqEFdMY?si=cNILEt2wgSjfYQOT"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="http://github.com/karthickpm01" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- contact  -->
+    <div class="contact" id="Contact">
+        <div class="container" data-aos="fade-down">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> karthikpm7728@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9876543210</p>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@Code_WIth_Karthi"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/__mr_w_i_z?igsh=MXBrNHU2d3g2cnRp&utm_source=qr"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="http://github.com/karthickpm01"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UC3cQxELH-vawcE69ltQ91Fg"><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+                    <a href="images/Karthick's Resume.pdf" Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright @ Karthick P M</p>
+        </div>
+    </div>
+
+    <script src="script.js">  </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxu6ijsjbjd6xyU-Zgd7qTcAH8LQ8DtvPVRLyvet9_FxgwErtUu9ekLmS4oQ_7lO8Zvfg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init(
+    {
+        offset:300,
+        duration:1200,
+    }
+  );
+</script>
+</body>
+
+</html>
